@@ -18,7 +18,6 @@ class TimerViewController: UIViewController {
     var x: Int = 0
 
     var timer: Timer?
-    var timerAfterRestart: Timer?
     
     override func viewDidLoad() {
         timeRecLabel.text = "0"
@@ -40,7 +39,6 @@ class TimerViewController: UIViewController {
 
     @IBAction func pauseButtonDidClick(_ sender: Any) {
         timer?.invalidate()
-        timerAfterRestart?.invalidate()
 
         if self.pauseButton.isEnabled {
             self.restartButton.isEnabled = true
