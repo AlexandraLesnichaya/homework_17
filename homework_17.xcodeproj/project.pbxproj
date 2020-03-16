@@ -13,6 +13,7 @@
 		ABEB11932416C6F000D9D928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEB11912416C6F000D9D928 /* Main.storyboard */; };
 		ABEB11952416C6F100D9D928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEB11942416C6F100D9D928 /* Assets.xcassets */; };
 		ABEB11982416C6F100D9D928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEB11962416C6F100D9D928 /* LaunchScreen.storyboard */; };
+		ABEB11A0241962B200D9D928 /* ViewMultiplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEB119F241962B200D9D928 /* ViewMultiplierViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ABEB11942416C6F100D9D928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABEB11972416C6F100D9D928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABEB11992416C6F100D9D928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEB119F241962B200D9D928 /* ViewMultiplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMultiplierViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				ABEB118B2416C6F000D9D928 /* AppDelegate.swift */,
 				ABEB118D2416C6F000D9D928 /* SceneDelegate.swift */,
 				ABEB118F2416C6F000D9D928 /* TimerViewController.swift */,
+				ABEB119F241962B200D9D928 /* ViewMultiplierViewController.swift */,
 				ABEB11912416C6F000D9D928 /* Main.storyboard */,
 				ABEB11942416C6F100D9D928 /* Assets.xcassets */,
 				ABEB11962416C6F100D9D928 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				ABEB11902416C6F000D9D928 /* TimerViewController.swift in Sources */,
 				ABEB118C2416C6F000D9D928 /* AppDelegate.swift in Sources */,
+				ABEB11A0241962B200D9D928 /* ViewMultiplierViewController.swift in Sources */,
 				ABEB118E2416C6F000D9D928 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,6 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var restartButton: UIButton!
 
     var x: Int = 0
-
     var timer: Timer?
     
     override func viewDidLoad() {
@@ -25,33 +24,28 @@ class TimerViewController: UIViewController {
     }
 
     @IBAction func startButtonDidClick(_ sender: Any) {
+        guard timer == nil else { return }
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-            UILabel.animate(withDuration: 1.0) {
-                self.x += 1
-                self.timeRecLabel.text = String(self.x)
-
-                if self.startButton.isEnabled {
-                    self.restartButton.isEnabled = false
-                }
-            }
+            self.x += 1
+            self.updateTimeRecLabel()
         }
     }
 
     @IBAction func pauseButtonDidClick(_ sender: Any) {
         timer?.invalidate()
-
-        if self.pauseButton.isEnabled {
-            self.restartButton.isEnabled = true
-        }
+        timer = nil
     }
 
     @IBAction func restartButtonDidClick(_ sender: Any) {
+        timer?.invalidate()
+        timer = nil
         x = 0
-        timeRecLabel.text = "0"
+        updateTimeRecLabel()
     }
 
-
-
+    func updateTimeRecLabel() {
+        timeRecLabel.text = String(x)
+    }
 }
 
 
